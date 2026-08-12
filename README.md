@@ -10,7 +10,7 @@ O projeto foi estruturado seguindo os princípios de um **Modern Data Lakehouse*
 
 * **Landing Zone / Volumes:** Recebimento e armazenamento de dados brutos relacionais (formatos CSV).
 * **Bronze Layer:** Ingestão e persistência dos dados brutos no formato **Delta Lake**.
-* **Silver Layer:** Higienização de dados via **PySpark** e **Spark SQL**, incluindo tratamento avançado de valores nulos, desduplicação por chaves primárias e compostas, limpeza de strings (`TRIM`, `UPPER`) e conversão/padronização de tipos (*casting*).
+* **Silver Layer:** Higienização de dados via **PySpark** e **Spark SQL**, incluindo tratamento avançado de valores nulos, desduplicação por chaves primárias e compostas, e conversão/padronização de tipos (*casting*).
 * **Gold Layer:** Modelagem dimensional em **Star Schema** (tabelas fato e dimensão) otimizada para alta performance em consultas analíticas e consumo no **Power BI**.
 
 ---
